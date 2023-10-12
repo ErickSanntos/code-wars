@@ -44,10 +44,19 @@ function addLength(str) {
 
  https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript]
 
- Code as fast as you can! You need to double the integer and return it.
+//  Code as fast as you can! You need to double the integer and return it.
 
  function doubleInteger(i) {
   let number = 2
   let double = number * 2
-  return 4;
+  return double;
 }
+// Input -> Output
+// "8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
+// "8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
+// "8aaaaa dddd r     " -> "8aaaaaddddr"
+
+function noSpace(x){
+  let removeSpace = x.split(' ').join('')
+  return removeSpace;
+  }
