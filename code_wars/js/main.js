@@ -41,3 +41,13 @@ function addLength(str) {
  //seperate word by space 
  //return as an array 
  
+
+ https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript]
+
+ Code as fast as you can! You need to double the integer and return it.
+
+ function doubleInteger(i) {
+  let number = 2
+  let double = number * 2
+  return 4;
+}
