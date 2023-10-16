@@ -51,6 +51,8 @@ function addLength(str) {
   let double = number * 2
   return double;
 }
+
+
 // Input -> Output
 // "8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
 // "8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
@@ -60,6 +62,7 @@ function noSpace(x){
   let removeSpace = x.split(' ').join('')
   return removeSpace;
   }
+
 
   //Task
 // Give you a function animal, accept 1 parameter:obj like this:
@@ -74,7 +77,7 @@ function animal(obj){
       legs: 4,
       color: 'white'
     }; 
-  return `this ${obj.color} ${obj.name} has ${obj.legs} legs.`
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.` /// simple mistakes get you 
  
 
 }
