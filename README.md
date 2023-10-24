@@ -7,3 +7,5 @@ had alot of problems with arrays but now its getting easy
 
 
 soon to be able to do objects 
+
+## 7 kyu improvments day by day 

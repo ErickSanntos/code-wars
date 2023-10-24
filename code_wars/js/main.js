@@ -82,3 +82,84 @@ function animal(obj){
 
 }
 
+//reverse a string 
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+////////
+function solution(str){
+  return str.split('').reverse('').join('')
+ 
+}
+// first split the string 
+// than i reverse the string 
+// than i join the strin back together
+
+// filter arrays
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+
+///
+
+function filter_list(l) {
+ 
+  return l.filter((ele)=> typeof ele === 'number')
+}
+// number 
+////////////
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+///
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
+https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+
+
+//Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+
+function sumStr(a,b) {
+  let result = parseInt(a) + parseInt(b)
+ let str_result = result.toString()
+ return str_result
+  
+}
+
+//We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+const stringToNumber = function(str){
+  let result = parseInt(str)
+  return result
+  return null;
+}
+
+
+//Clock shows h hours, m minutes and s seconds after midnight.
+
+Your task is to write a function which returns the time since midnight in milliseconds.
+
+function past(h, m, s){
+  return  ((h*60*60+m*60+s)*1000)
+    console.log(past)
+  }
+  // shows hours minutes and seconds
+  // need a function 
+  // returns time in milliseconds
+  // 1 hour = 3600 second 
+  // 3600 * 1000 = milliseconds 
