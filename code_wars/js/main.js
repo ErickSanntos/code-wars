@@ -173,3 +173,16 @@ function litres(time) {
     let drinks = Math.floor(time * 0.5)
     return drinks;
   }
+
+  // This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+
+  function simpleMultiplication(number) {
+    if(number % 2 === 0){
+      return number * 8
+    }else if(number % 2 != 0 ){
+       return number * 9
+    }
+ }
+ // if even multiply by 1/8 
+ // if otherwise divide by 9
