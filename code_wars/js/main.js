@@ -200,6 +200,21 @@ function disemvowel(str) {
   return str.replace(/[aeiou]/gi, '');
 }
 
+//Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+
+function maps(x){
+  return x.map((el) => el * 2)
+}
+// iterrate thru each arrays index for each array 
+// multiply by 2
+//try map()
+// mutate 
+//imitible 
+//mutible 
 
 
 // document.addEventListener('DOMContentLoaded', function() {
