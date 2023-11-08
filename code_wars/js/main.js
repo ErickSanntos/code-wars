@@ -216,6 +216,37 @@ function maps(x){
 //imitible 
 //mutible 
 
+js
+
+function factorial(n){
+// 5
+  // base cases 
+  
+  if (n < 0 || n > 12) {
+    return RangeError;
+  }
+  
+  if (n === 0) {
+    return 1; 
+  }
+  
+  return n * factorial(n-1);
+  
+  // factorial(5) * factorial(4)... // 5 * 24 = 120
+  
+    // facotrial(4) * factorial(3) // 4 * 6 = 24
+  
+        // factorial(3) * factorial(2) // 3 * 2 = 6
+          
+          // factorial(2) * factorial(1) // 2 * 1
+
+            // factorial(1) * factorial(0) // 1
+
+              // factorial(0) return 1 
+                
+    // n! === n * (n-1)
+  
+}
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   const facilitiesList = document.getElementById('facilitiesList')
