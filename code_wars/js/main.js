@@ -259,3 +259,106 @@ function booleanToString(b){
   }
 
 }
+// In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times.
+
+// Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
+// Example:
+// move(3, 6) should equal 15
+function move (position, roll) {
+  return position + 2 * roll
+ }
+ //player rolls a dice 
+ // plauer moves 2 times the amount on the dice 
+ // takes the position 
+ // takes the roll 1 to 6 
+ // return sum 
+ 
+ // use math.floor for whole numbers 
+ // use math.random to get random number 
+
+ // Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+ function between(a, b) {
+  if (a >= b) {
+    return []; // If a is greater than or equal to b, return an empty array.
+  }
+
+  const result = [];
+  for (let i = a; i <= b; i++) {
+    result.push(i);
+  }
+
+  return result;
+}
+//if a is less than or equal to b return an empty string 
+// than we do a for loop 
+
+
+//Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+
+// "I love you"
+// "a little"
+// "a lot"
+// "passionately"
+// "madly"
+// "not at all"
+// If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+
+// When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+
+// Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+
+
+
+function howMuchILoveYou(nbPetals) {
+  const phrases = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all"
+  ];
+
+  // Calculate the index of the last phrase based on the number of petals
+  const lastIndex = (nbPetals - 1) % phrases.length;
+
+  // Return the corresponding phrase
+  return phrases[lastIndex];
+}
+
+// This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
+const solve = (x, y) => x / y
+
+//Return an array containing the numbers from 1 to N, where N is the parametered value.
+
+// Replace certain values however if any of the following conditions are met:
+
+// If the value is a multiple of 3: use the value "Fizz" instead
+// If the value is a multiple of 5: use the value "Buzz" instead
+// If the value is a multiple of 3 & 5: use the value "FizzBuzz" instead
+// N will never be less than 1.
+
+// Method calling example:
+
+// fizzbuzz(3) -->  [1, 2, "Fizz"]
+// ALGORITHMSFUNDAMENTALSARRAYS
+
+function fizzbuzz(n) {
+  const result = [];
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      result.push("Fizz");
+    } else if (i % 5 === 0) {
+      result.push("Buzz");
+    } else {
+      result.push(i);
+    }
+  }
+
+  return result;
+}
+
