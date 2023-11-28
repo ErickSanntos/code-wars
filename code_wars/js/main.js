@@ -362,3 +362,55 @@ function fizzbuzz(n) {
   return result;
 }
 
+// You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+// Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+
+// For example, when the input is green, output should be yellow.
+function updateLight(current) {
+  
+  if(current === 'green'){
+    return 'yellow'
+  }else if(current === 'yellow'){
+    return 'red'
+  }else if(current === 'red'){
+    return'green'
+  }
+    
+}
+// need a function for changing lights 
+// ima use a if else statement 
+
+//Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+// Use conditionals to return the proper message:
+
+// case	return
+// name equals owner	'Hello boss'
+// otherwise	'Hello guest' 
+function greet (name, owner) {
+  if(name === owner){
+    return 'Hello boss'
+  }else {
+    return 'Hello guest'
+  }
+}
+//other way 
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 	'Hello guest';
+}
+
+//Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+// we are removing every ! mark from each string 
+// check if it has a ! mark 
+// if it does remove it 
+// im going to try pop 
+function removeExclamationMarks(s) {
+  let result = '';
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== '!') {
+      result += s[i];
+    }
+  }
+  return result;
+}
